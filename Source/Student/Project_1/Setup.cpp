@@ -5,7 +5,7 @@
 void ProjectOne::setup()
 {
     // Create an agent (using the default "Agent::AgentModel::Man" model)
-    auto man = agents->create_behavior_agent("ExampleAgent", BehaviorTreeTypes::Example);
+    //auto man = agents->create_behavior_agent("ExampleAgent", BehaviorTreeTypes::Example);
 
     // You can change properties here or at runtime from a behavior tree leaf node
     // Look in Agent.h for all of the setters, like these:
@@ -26,11 +26,61 @@ void ProjectOne::setup()
     Agent::add_model("Assets\\ball.sdkmesh", Agent::AgentModel::Ball);
     Agent::add_model("Assets\\hut.sdkmesh", Agent::AgentModel::Hut);
     // 3. Create the agent, giving it the correct AgentModel type.
-    auto tree = agents->create_behavior_agent("ExampleAgent2", BehaviorTreeTypes::Example, Agent::AgentModel::Tree);
+    //auto tree = agents->create_behavior_agent("ExampleAgent2", BehaviorTreeTypes::Example, Agent::AgentModel::Tree);
     // 4. (optional) You can also set the pitch of the model, if you want it to be rotated differently
-    tree->set_pitch(PI / 2);
+    //tree->set_pitch(PI / 2);
     // 5. (optional) Set other aspects to make it start out correctly
-    tree->set_color(Vec3(0, 0.5, 0));   // Set the tree to green
+    //tree->set_color(Vec3(0, 0.5, 0));   // Set the tree to green
+
+    //Movement tree
+    /*auto man = agents->create_behavior_agent("Character", BehaviorTreeTypes::Movement, Agent::AgentModel::Man);
+    man->set_position(Vec3(10.f, 0.f, 10.f));*/
+
+    //Avoid tree
+    /*auto car = agents->create_behavior_agent("Car", BehaviorTreeTypes::Avoid, Agent::AgentModel::Car);
+    car->set_color(Vec3(0.5f, 0, 0));
+    car->set_scaling(0.75f);
+
+    auto tree = agents->create_behavior_agent("Tree", BehaviorTreeTypes::Example, Agent::AgentModel::Tree);
+    tree->set_pitch(PI / 2);
+    tree->set_color(Vec3(0, 0.5f, 0));*/
+
+    //Pause tree
+    /*auto bird = agents->create_behavior_agent("Bird", BehaviorTreeTypes::Pause, Agent::AgentModel::Bird);
+    bird->set_color(Vec3(0.5f, 0, 0));
+    bird->set_scaling(0.025f);
+    bird->set_position(Vec3());*/
+
+    //Ball & Player tree
+    auto ball1 = agents->create_behavior_agent("ball1", BehaviorTreeTypes::Ball, Agent::AgentModel::Ball);
+    ball1->set_color(Vec3(1.0f, 0.5f, 0.4f));
+    ball1->set_scaling(0.75f);
+    ball1->set_position(Vec3(0.f, 5.f, 0.f));
+    ball1->set_movement_speed(35.f);
+    auto ball2 = agents->create_behavior_agent("ball2", BehaviorTreeTypes::Ball, Agent::AgentModel::Ball);
+    ball2->set_color(Vec3(1.0f, 0.5f, 0.4f));
+    ball2->set_scaling(0.75f);
+    ball2->set_position(Vec3(25.f, 5.f, 0.f));
+    ball2->set_movement_speed(35.f);
+    auto ball3 = agents->create_behavior_agent("ball3", BehaviorTreeTypes::Ball, Agent::AgentModel::Ball);
+    ball3->set_color(Vec3(1.0f, 0.5f, 0.4f));
+    ball3->set_scaling(0.75f);
+    ball3->set_position(Vec3(50.f, 5.f, 0.f));
+    ball3->set_movement_speed(35.f);
+    auto ball4 = agents->create_behavior_agent("ball4", BehaviorTreeTypes::Ball, Agent::AgentModel::Ball);
+    ball4->set_color(Vec3(1.0f, 0.5f, 0.4f));
+    ball4->set_scaling(0.75f);
+    ball4->set_position(Vec3(75.f, 5.f, 0.f));
+    ball4->set_movement_speed(35.f);
+    auto ball5 = agents->create_behavior_agent("ball5", BehaviorTreeTypes::Ball, Agent::AgentModel::Ball);
+    ball5->set_color(Vec3(1.0f, 0.5f, 0.4f));
+    ball5->set_scaling(0.75f);
+    ball5->set_position(Vec3(100.f, 5.f, 0.f));
+    ball5->set_movement_speed(35.f);
+
+    auto player = agents->create_behavior_agent("player", BehaviorTreeTypes::Movement, Agent::AgentModel::Man);
+    player->set_position(Vec3(50.f, 0.f, 50.f));
+    player->set_movement_speed(75.f);
 
     // You can technically load any map you want, even create your own map file,
     // but behavior agents won't actually avoid walls or anything special, unless you code

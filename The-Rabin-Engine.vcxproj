@@ -29,21 +29,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -51,7 +51,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -254,12 +254,23 @@
     <ClInclude Include="Source\Student\Project_1\ControlFlow\C_Sequencer.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Delay.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_InvertedRepeater.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_Pause.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_RepeatFourTimes.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_TargetDist5.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_TargetDist50.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckAKeyClick.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckDKeyClick.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckWKeyClick.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckSKeyClick.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckMouseClick.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckPKeyClick.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckRKeyClick.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Idle.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_Movement.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToFurthestAgent.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToMouseClick.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToRandomPosition.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_Pause.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_PlaySound.h" />
     <ClInclude Include="Source\Student\Project_1\NodeHeaders.h" />
     <ClInclude Include="Source\Student\Project_2\P2_Pathfinding.h" />
@@ -334,12 +345,23 @@
     <ClCompile Include="Source\Student\Project_1\ControlFlow\C_Sequencer.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Delay.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_InvertedRepeater.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_Pause.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_RepeatFourTimes.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_TargetDist5.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_TargetDist50.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckAKeyClick.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckDKeyClick.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckWKeyClick.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckSKeyClick.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckMouseClick.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckPKeyClick.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckRKeyClick.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Idle.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_Movement.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToFurthestAgent.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToMouseClick.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToRandomPosition.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_Pause.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_PlaySound.cpp" />
     <ClCompile Include="Source\Student\Project_1\Setup.cpp" />
     <ClCompile Include="Source\Student\Project_2\P2_Pathfinding.cpp" />

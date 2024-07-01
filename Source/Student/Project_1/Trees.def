@@ -1,2 +1,7 @@
+#include "../Source/Student/Project_1/Trees/Avoid.bht"
+#include "../Source/Student/Project_1/Trees/Ball.bht"
 #include "../Source/Student/Project_1/Trees/Example.bht"
 #include "../Source/Student/Project_1/Trees/Idle.bht"
+#include "../Source/Student/Project_1/Trees/Movement.bht"
+#include "../Source/Student/Project_1/Trees/Pause.bht"
+#include "../Source/Student/Project_1/Trees/Player.bht"

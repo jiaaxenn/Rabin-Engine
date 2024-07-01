@@ -322,6 +322,39 @@
     <ClInclude Include="Source\Framework\Core\AudioManager.h">
       <Filter>Source\Framework\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckWKeyClick.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckSKeyClick.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckPKeyClick.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckRKeyClick.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_Movement.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_Pause.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckAKeyClick.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckDKeyClick.h">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_TargetDist50.h">
+      <Filter>Source\Student\Project_1\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_Pause.h">
+      <Filter>Source\Student\Project_1\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_TargetDist5.h">
+      <Filter>Source\Student\Project_1\Decorator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Framework\Main.cpp">
@@ -545,6 +578,39 @@
     </ClCompile>
     <ClCompile Include="Source\Framework\Core\AudioManager.cpp">
       <Filter>Source\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckWKeyClick.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckSKeyClick.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckPKeyClick.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckRKeyClick.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_Movement.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_Pause.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckAKeyClick.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckDKeyClick.cpp">
+      <Filter>Source\Student\Project_1\Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_TargetDist50.cpp">
+      <Filter>Source\Student\Project_1\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_Pause.cpp">
+      <Filter>Source\Student\Project_1\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_TargetDist5.cpp">
+      <Filter>Source\Student\Project_1\Decorator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
