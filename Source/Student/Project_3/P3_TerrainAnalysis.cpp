@@ -703,6 +703,13 @@ void enemy_field_of_view(MapLayer<float> &layer, float fovAngle, float closeDist
       }
     }
   }
+
+  auto enemyNeighbours = GetNeighbours(enemyPosGrid.row, enemyPosGrid.col);
+  for each (auto neighbour in enemyNeighbours)
+  {
+    if (is_clear_path(enemyPosGrid.row, enemyPosGrid.col, neighbour.first, neighbour.second))
+      layer.set_value(neighbour.first, neighbour.second, occupancyValue);
+  }
   
   //for (int row = 0; row < terrain->get_map_height(); ++row)
   //{
